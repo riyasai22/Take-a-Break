@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take A Break</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-main">
+        <h1>Take a Break</h1>
+        <h3>Set your break time & take a chill pill!</h3>
+        <div class="timeChoice">
+          <button class="time-btn five" type="text" data-value="5">5min</button>
+          <a href="#web">
+            <button class="time-btn ten" type="text" data-value="10">
+              10min
+            </button>
+          </a>
+          <a href="#web">
+            <button class="time-btn fifteen" type="text" data-value="15">
+              15min
+            </button>
+          </a>
+          <a href="#web">
+            <button class="time-btn thirty" type="text" data-value="30">
+              30min
+            </button>
+          </a>
+          <button class="time-btn custom" type="text" value="0">Custom</button>
+        </div>
+        <a  href="#form-2" class="navigate">
+          <i class="fa-solid fa-arrow-down"></i>     
+        </a>
+      </div>
+
+      <div class="pop-up-container">
+        <div class="pop-up">
+          <h4>Time's up! Get back to work!</h4>
+          <button class="ok">OK</button>
+        </div>
+      </div>
+
+      <div class="pop-up-container2">
+        <div class="pop-up">
+          <h4>Custom Time</h4>
+          <p>How long do you want a break(in mins)?</p>
+          <input type="number" placeholder="Time in mins" class="timeInp" />
+          <div class="button-options">
+            <button class="accepted ok1">Let's go!</button>
+            <button class="rejected rejected1">Cancel</button>
+          </div>
+         </div>
+        </div>
+        
+        <div class="pop-up-container3">
+            <div class="pop-up">
+            <h4>Add Custom Site</h4>
+            <label for="label">Site Label</label>
+            <input type="text" name="label" id="siteLabel"/>
+            <label for="link">Link</label>
+            <input type="text" name="link" id="siteLink"/>
+
+            <div class="button-options">
+              <button class="accepted" id="addSite">Add Site</button>
+              <button class="rejected rejected2">Close</button>
+            </div>
+          </div>
+        </div>
+
+        <form class="form-container2" id="form-2">
+          <p class="countdown" id="countdown"></p>
+          <h3>>> Enter website directly</h3>
+          <div class="search">
+            <input
+              type="text"
+              class="inputWebsite"
+              placeholder="eg. youtube..."
+            />
+            <button class="submit" type="submit">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <h2 class="or">OR</h2>
+          <h3>>> Pick a suggested website!</h3>
+          <!--onclick="addSite(document.getElementById('addPage').value)"--> 
+          <ul class="suggested">
+            <button type="button" id="addPageBox" onclick="addPageBoxClick()" data-value="add" class="addPage">
+              <div class="icon">
+                <img src="icons/add.png" />
+              </div>
+              <p>Add Site</p>
+            </button>
+
+
+            <!-- <div id="facebook" data-value="facebook" class="webpage">
+              <div class="icon">
+                <img src="icons/facebook.png" />
+              </div>
+              <p>Facebook</p>
+            </div>
+            <a
+              href="www.google.com"
+              id="google"
+              data-value="google"
+              class="webpage"
+            >
+              <div class="icon">
+                <img src="icons/google.png" />
+              </div>
+              <p>Google</p>
+            </a>
+            <a
+              href="www.reddit.com"
+              id="reddit"
+              data-value="reddit"
+              class="webpage"
+            >
+              <div class="icon">
+                <img src="icons/reddit.png" />
+              </div>
+              <p>Reddit</p>
+            </a>
+            <a
+              href="www.youtube.com"
+              id="youtube"
+              data-value="youtube"
+              class="webpage"
+            >
+              <div class="icon">
+                <img src="icons/youtube.png" />
+              </div>
+              <p>Youtube</p>
+            </a>
+            <a
+              href="www.netflix.com"
+              id="netflix"
+              data-value="netflix"
+              class="webpage"
+            >
+              <div class="icon">
+                <img src="icons/netflix.png" />
+              </div>
+              <p>Netflix</p>
+            </a>
+            <a
+              href="www.instagram.com"
+              id="instagram"
+              data-value="instagram"
+              class="webpage"
+            >
+              <div class="icon">
+                <img src="icons/instagram.png" />
+              </div>
+              <p>Instagram</p>
+            </a> -->
+          </ul>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>
